@@ -1,0 +1,392 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: Manrope;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* p {
+  line-height: 30px;
+} */
+
+.content {
+  max-width: 1240px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn {
+  background-color: var(--bgc-btn);
+  display: inline-block;
+  border-radius: 4px;
+  padding: 8px 24px;
+  text-align: center;
+}
+
+:root {
+  --text-color: #191720;
+  --bgc-header: #fffae3;
+  --bgc-btn: #572af8;
+  --white: #fff;
+  --grey: #575363;
+}
+
+/* ============================ */
+
+/* Header */
+
+.header {
+  padding-top: 32px;
+  background-color: var(--bgc-header);
+  padding-bottom: 32px;
+}
+
+/* Nav */
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo .a-logo {
+  color: var(--text-color);
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 800;
+}
+
+.menu-links {
+  display: flex;
+}
+
+.menu-links .links:not(:first-child) {
+  margin-left: 48px;
+}
+
+.menu-links .links a {
+  color: var(--text-color);
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.menu-links .links:last-child a {
+  display: flex;
+  align-items: center;
+}
+
+.menu-links .link-vector {
+  margin-left: 6px;
+}
+
+.account .sign-in {
+  color: var(--text-color);
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.account .btn-sign-up {
+  margin-left: 30px;
+}
+
+.account .sign-up {
+  color: var(--white);
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 600;
+}
+
+/* Main */
+
+.main .table {
+  margin-top: 100px;
+}
+
+.main .table .title p {
+  color: var(--text-color);
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.main .table .title p:first-child {
+  padding-left: 319px;
+}
+
+.main .table .title p:nth-child(2) {
+  padding-left: 232px;
+}
+
+.main .table .title p:nth-child(3) {
+  padding-left: 122px;
+}
+
+.main .table .title p:last-child {
+  padding-left: 169px;
+}
+
+.main .table .title {
+  padding: 24px 0;
+  display: flex;
+  border: 1px solid var(--text-color);
+}
+
+.main .table .name-food {
+  color: var(--text-color);
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  margin-left: 90px;
+}
+
+.main .table .price,
+.main .table .total {
+  color: var(--text-color);
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  margin-left: 110px;
+}
+
+.main .table .quantity {
+  display: flex;
+  align-items: center;
+  margin-left: 110px;
+}
+
+.main .table .quantity .reduce {
+  padding: 11px 21px;
+  border: 1px solid var(--text-color);
+}
+
+.main .table .quantity .quantity-number {
+  padding: 8px 20px;
+  color: var(--text-color);
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  border: 1px solid var(--text-color);
+}
+
+.main .table .quantity .increase {
+  padding: 11px 21px;
+  border: 1px solid var(--text-color);
+}
+
+.main .table .item i {
+  font-size: 2.4rem;
+  padding: 0 40px;
+}
+
+.main .table .item img {
+  padding: 28px 0;
+}
+
+.main .table .item {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--text-color);
+}
+
+.main .table input {
+  padding: 8px 30px 8px 12px;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.main .table button {
+  padding: 8px 30px;
+  color: var(--white);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  background: var(--bgc-btn);
+}
+
+.main .table .sell {
+  display: flex;
+  justify-content: space-between;
+  padding: 28px 0;
+  border: 1px solid var(--text-color);
+}
+
+.main .table .sell div input {
+  margin-left: 40px;
+}
+
+.main .table .sell div button {
+  margin-left: 26px;
+}
+
+.main .table .sell > button {
+  margin-right: 40px;
+}
+
+.main .cart-total {
+  display: grid;
+  grid-template-columns: 130px 300px;
+  margin-top: 100px;
+}
+
+.main .cart-total .title {
+  border: 1px solid var(--text-color);
+}
+
+.main .cart-total .container {
+  border: 1px solid var(--text-color);
+}
+
+.main .cart-total h3 {
+  color: var(--text-color);
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  padding: 28px 0;
+  margin-left: 16px;
+}
+
+.main .cart-total .container > p {
+  color: var(--text-color);
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  padding: 28px 0;
+  margin-left: 16px;
+}
+
+.main .cart-total .container > p:first-child {
+  padding: 28px 0;
+}
+
+.main .cart-total .container .highlight {
+  color: var(--text-color);
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.main .cart-total .container input {
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  padding: 8px 16px;
+  margin-top: 30px;
+  margin-left: 16px;
+}
+
+.main .cart-total .container button {
+  color: var(--text-color);
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 600;
+  padding: 8px 30px;
+  display: block;
+  margin-top: 30px;
+  margin-left: 16px;
+}
+
+.main .content > button {
+  width: 430px;
+  padding: 8px 30px;
+  color: var(--text-color);
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 600;
+  margin-top: 30px;
+}
+
+/* Footer */
+
+.footer {
+  margin-top: 100px;
+  padding: 100px 0 30px;
+  background-color: var(--bgc-header);
+}
+
+.footer .content:first-child {
+  display: flex;
+}
+
+.footer .desc {
+  color: var(--grey);
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  margin-top: 12px;
+}
+
+.footer .social i {
+  font-size: 35px;
+  color: var(--text-color);
+  margin-top: 20px;
+}
+
+.footer .social a:not(:first-child) {
+  margin-left: 12px;
+}
+
+.footer .social a:hover i {
+  color: var(--bgc-btn);
+}
+
+.list-path h3 {
+  color: var(--text-color);
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.list-path .link a {
+  color: var(--grey);
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.list-path .link:not(:first-child) {
+  margin-top: 16px;
+}
+
+.list-path {
+  display: flex;
+  margin-left: 213px;
+}
+
+.list-path .path {
+  margin-left: 75px;
+}
+
+.footer .line {
+  height: 1px;
+  border-radius: 4px;
+  background: var(--grey);
+  margin-top: 55px;
+}
+
+.footer .license {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.footer .license p {
+  color: var(--grey);
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.footer .license .security {
+  display: flex;
+  gap: 30px;
+}

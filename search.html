@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foodeats</title>
+
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style-search.css" />
+    <link rel="stylesheet" href="./assets/css/stylesheet.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="./assets/favicon/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="./assets/favicon/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="./assets/favicon/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="./assets/favicon/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="./assets/favicon/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="./assets/favicon/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="./assets/favicon/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="./assets/favicon/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/favicon/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="./assets/favicon/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="./assets/favicon/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./assets/favicon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-TileImage"
+      content="./assets/favicon/ms-icon-144x144.png"
+    />
+    <meta name="theme-color" content="#ffffff" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="content">
+        <nav class="nav">
+          <!-- logo -->
+
+          <div class="logo">
+            <a href="index.html" class="a-logo"
+              >F<span><img src="./assets/img/logo-1.jpg" alt="logo" /></span
+              ><span
+                ><img src="./assets/img/logo-2.jpg" alt="logo" />DEATS</span
+              ></a
+            >
+          </div>
+
+          <!-- nav-link -->
+
+          <ul class="menu-links">
+            <li class="links"><a href="#!">Get the app</a></li>
+            <li class="links"><a href="#!">About</a></li>
+            <li class="links">
+              <a href="#!"
+                >Page
+                <img
+                  src="./assets/img/menu-link-vector.svg"
+                  alt=""
+                  class="link-vector"
+              /></a>
+            </li>
+          </ul>
+          <div class="account">
+            <div class="btn shoping">
+              <a href="#!">
+                <i class="fa-solid fa-cart-shopping"></i>
+                0
+              </a>
+            </div>
+            <div class="btn btn-sign-up">
+              <a href="#!" class="sign-up">Sign Up</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main class="main">
+      <div class="main-header">
+        <div class="content">
+          <div class="option">
+            <div>
+              <p class="filter">Filters</p>
+              <p class="clear">Clear All</p>
+            </div>
+            <div>
+              <p class="restaurants">Restaurants</p>
+              <p class="catering">Catering</p>
+            </div>
+            <div class="btn delivery">Delivery</div>
+            <div class="btn pickup">Pickup</div>
+            <div class="desc">
+              <p class="title">Deliver my food</p>
+              <p class="highlight">• Today,ASAP</p>
+            </div>
+            <div class="menu">
+              <div class="food">
+                <div>
+                  <h3 class="title">FoodEats</h3>
+                  <img src="./assets/img/arrow-bottom.svg" alt="" />
+                </div>
+              </div>
+              <div class="food">
+                <div>
+                  <h3 class="title">Price</h3>
+                  <img src="./assets/img/arrow-bottom.svg" alt="" />
+                </div>
+              </div>
+              <div class="food">
+                <div>
+                  <h3 class="title">Max Delivery Fee</h3>
+                  <img src="./assets/img/arrow-bottom.svg" alt="" />
+                </div>
+              </div>
+              <div class="food">
+                <div>
+                  <h3 class="title">Rating</h3>
+                  <img src="./assets/img/arrow-bottom.svg" alt="" />
+                </div>
+              </div>
+              <div class="food">
+                <div>
+                  <h3 class="title">Delivery Time</h3>
+                  <img src="./assets/img/arrow-bottom.svg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="list">
+            <div class="title">
+              <h3 class="heading">Explore by category</h3>
+              <p class="sub">View All</p>
+            </div>
+            <div class="menu">
+              <div class="ellipse">
+                <img src="./assets/img/Burger.png" alt="" />
+              </div>
+              <div class="ellipse">
+                <img src="./assets/img/pizza.png" alt="" />
+              </div>
+              <div class="ellipse">
+                <img src="./assets/img/sandwiches.png" alt="" />
+              </div>
+              <div class="ellipse">
+                <img src="./assets/img/wings.png" alt="" />
+              </div>
+              <div class="ellipse">
+                <img src="./assets/img/coffe.png" alt="" />
+              </div>
+              <div class="ellipse">
+                <img src="./assets/img/indian.png" alt="" />
+              </div>
+              <div class="ellipse">
+                <img src="./assets/img/chinese.png" alt="" />
+              </div>
+              <div class="ellipse">
+                <img src="./assets/img/thais.png" alt="" />
+              </div>
+            </div>
+            <hr />
+            <div class="container">
+              <div class="item">
+                <a href="details.html"
+                  ><img src="./assets/img/Rectangle 48.png" alt=""
+                /></a>
+                <h3 class="food-name">The Burger Cafe</h3>
+                <p class="price">$0 delivery fee</p>
+                <div class="desc">
+                  <div>
+                    <p class="time">Time:</p>
+                    <p class="highlight">20 min</p>
+                  </div>
+                  <img src="./assets/img/Rectangle 49.svg" alt="" />
+                  <div class="">
+                    <p class="time">Food Type:</p>
+                    <p class="highlight">Burger</p>
+                  </div>
+                </div>
+                <div class="review">
+                  4.6 <i class="fa-solid fa-star" style="color: #ffcf54"></i>
+                  (2,200)
+                </div>
+              </div>
+              <div class="item">
+                <a href="#!"><img src="./assets/img/piza.png" alt="" /></a>
+                <h3 class="food-name">The Pizza Hut</h3>
+                <p class="price">$0 delivery fee</p>
+                <div class="desc">
+                  <div>
+                    <p class="time">Time:</p>
+                    <p class="highlight">20 min</p>
+                  </div>
+                  <img src="./assets/img/Rectangle 49.svg" alt="" />
+                  <div class="">
+                    <p class="time">Food Type:</p>
+                    <p class="highlight">Pizza</p>
+                  </div>
+                </div>
+                <div class="review">
+                  4.6 <i class="fa-solid fa-star" style="color: #ffcf54"></i>
+                  (2,200)
+                </div>
+              </div>
+              <div class="item">
+                <a href="#!"><img src="./assets/img/sandwich.png" alt="" /></a>
+                <h3 class="food-name">Caprese Sandwich Hub</h3>
+                <p class="price">$0 delivery fee</p>
+                <div class="desc">
+                  <div>
+                    <p class="time">Time:</p>
+                    <p class="highlight">20 min</p>
+                  </div>
+                  <img src="./assets/img/Rectangle 49.svg" alt="" />
+                  <div class="">
+                    <p class="time">Food Type:</p>
+                    <p class="highlight">Fast Food</p>
+                  </div>
+                </div>
+                <div class="review">
+                  4.6 <i class="fa-solid fa-star" style="color: #ffcf54"></i>
+                  (2,200)
+                </div>
+              </div>
+              <div class="item">
+                <a href="#!"><img src="./assets/img/wing.png" alt="" /></a>
+                <h3 class="food-name">The Wings Cafe</h3>
+                <p class="price">$0 delivery fee</p>
+                <div class="desc">
+                  <div>
+                    <p class="time">Time:</p>
+                    <p class="highlight">20 min</p>
+                  </div>
+                  <img src="./assets/img/Rectangle 49.svg" alt="" />
+                  <div class="">
+                    <p class="time">Food Type:</p>
+                    <p class="highlight">Fast Food</p>
+                  </div>
+                </div>
+                <div class="review">
+                  4.6 <i class="fa-solid fa-star" style="color: #ffcf54"></i>
+                  (2,200)
+                </div>
+              </div>
+              <div class="item">
+                <a href="#!"><img src="./assets/img/the coffe.png" alt="" /></a>
+                <h3 class="food-name">The Coffee Express</h3>
+                <p class="price">$0 delivery fee</p>
+                <div class="desc">
+                  <div>
+                    <p class="time">Time:</p>
+                    <p class="highlight">20 min</p>
+                  </div>
+                  <img src="./assets/img/Rectangle 49.svg" alt="" />
+                  <div class="">
+                    <p class="time">Food Type:</p>
+                    <p class="highlight">Coffee & Tea</p>
+                  </div>
+                </div>
+                <div class="review">
+                  4.6 <i class="fa-solid fa-star" style="color: #ffcf54"></i>
+                  (2,200)
+                </div>
+              </div>
+              <div class="item">
+                <a href="#!"><img src="./assets/img/biryani.png" alt="" /></a>
+                <h3 class="food-name">The Biryani House</h3>
+                <p class="price">$0 delivery fee</p>
+                <div class="desc">
+                  <div>
+                    <p class="time">Time:</p>
+                    <p class="highlight">20 min</p>
+                  </div>
+                  <img src="./assets/img/Rectangle 49.svg" alt="" />
+                  <div class="">
+                    <p class="time">Food Type:</p>
+                    <p class="highlight">Dish</p>
+                  </div>
+                </div>
+                <div class="review">
+                  4.6 <i class="fa-solid fa-star" style="color: #ffcf54"></i>
+                  (2,200)
+                </div>
+              </div>
+              <div class="item">
+                <a href="#!"
+                  ><img src="./assets/img/Fast Food Hub.png" alt=""
+                /></a>
+                <h3 class="food-name">Fast Food Hub</h3>
+                <p class="price">$0 delivery fee</p>
+                <div class="desc">
+                  <div>
+                    <p class="time">Time:</p>
+                    <p class="highlight">20 min</p>
+                  </div>
+                  <img src="./assets/img/Rectangle 49.svg" alt="" />
+                  <div class="">
+                    <p class="time">Food Type:</p>
+                    <p class="highlight">Fast Food</p>
+                  </div>
+                </div>
+                <div class="review">
+                  4.6 <i class="fa-solid fa-star" style="color: #ffcf54"></i>
+                  (2,200)
+                </div>
+              </div>
+              <div class="item">
+                <a href="#!"
+                  ><img src="./assets/img/Fast Food Cafe.png" alt=""
+                /></a>
+                <h3 class="food-name">Fast Food Cafe</h3>
+                <p class="price">$0 delivery fee</p>
+                <div class="desc">
+                  <div>
+                    <p class="time">Time:</p>
+                    <p class="highlight">20 min</p>
+                  </div>
+                  <img src="./assets/img/Rectangle 49.svg" alt="" />
+                  <div class="">
+                    <p class="time">Food Type:</p>
+                    <p class="highlight">Fast Food</p>
+                  </div>
+                </div>
+                <div class="review">
+                  4.6 <i class="fa-solid fa-star" style="color: #ffcf54"></i>
+                  (2,200)
+                </div>
+              </div>
+              <div class="item">
+                <a href="#!"><img src="./assets/img/chicken.png" alt="" /></a>
+                <h3 class="food-name">Fried Chicken Hub</h3>
+                <p class="price">$0 delivery fee</p>
+                <div class="desc">
+                  <div>
+                    <p class="time">Time:</p>
+                    <p class="highlight">20 min</p>
+                  </div>
+                  <img src="./assets/img/Rectangle 49.svg" alt="" />
+                  <div class="">
+                    <p class="time">Food Type:</p>
+                    <p class="highlight">Fast Food</p>
+                  </div>
+                </div>
+                <div class="review">
+                  4.6 <i class="fa-solid fa-star" style="color: #ffcf54"></i>
+                  (2,200)
+                </div>
+              </div>
+              <div class="item">
+                <a href="#!"><img src="./assets/img/steak.png" alt="" /></a>
+                <h3 class="food-name">The Steak Cafe</h3>
+                <p class="price">$0 delivery fee</p>
+                <div class="desc">
+                  <div>
+                    <p class="time">Time:</p>
+                    <p class="highlight">20 min</p>
+                  </div>
+                  <img src="./assets/img/Rectangle 49.svg" alt="" />
+                  <div class="">
+                    <p class="time">Food Type:</p>
+                    <p class="highlight">Fast Food</p>
+                  </div>
+                </div>
+                <div class="review">
+                  4.6 <i class="fa-solid fa-star" style="color: #ffcf54"></i>
+                  (2,200)
+                </div>
+              </div>
+              <div class="item">
+                <a href="#!"
+                  ><img src="./assets/img/pizza king.png" alt=""
+                /></a>
+                <h3 class="food-name">The Pizza King</h3>
+                <p class="price">$0 delivery fee</p>
+                <div class="desc">
+                  <div>
+                    <p class="time">Time:</p>
+                    <p class="highlight">20 min</p>
+                  </div>
+                  <img src="./assets/img/Rectangle 49.svg" alt="" />
+                  <div class="">
+                    <p class="time">Food Type:</p>
+                    <p class="highlight">Pizza</p>
+                  </div>
+                </div>
+                <div class="review">
+                  4.6 <i class="fa-solid fa-star" style="color: #ffcf54"></i>
+                  (2,200)
+                </div>
+              </div>
+              <div class="item">
+                <a href="#!"><img src="./assets/img/french.png" alt="" /></a>
+                <h3 class="food-name">The French Fries</h3>
+                <p class="price">$0 delivery fee</p>
+                <div class="desc">
+                  <div>
+                    <p class="time">Time:</p>
+                    <p class="highlight">20 min</p>
+                  </div>
+                  <img src="./assets/img/Rectangle 49.svg" alt="" />
+                  <div class="">
+                    <p class="time">Food Type:</p>
+                    <p class="highlight">Fast Food</p>
+                  </div>
+                </div>
+                <div class="review">
+                  4.6 <i class="fa-solid fa-star" style="color: #ffcf54"></i>
+                  (2,200)
+                </div>
+              </div>
+              <div class="item">
+                <a href="#!"><img src="./assets/img/noodle.png" alt="" /></a>
+                <h3 class="food-name">The Noodles Cafe</h3>
+                <p class="price">$0 delivery fee</p>
+                <div class="desc">
+                  <div>
+                    <p class="time">Time:</p>
+                    <p class="highlight">20 min</p>
+                  </div>
+                  <img src="./assets/img/Rectangle 49.svg" alt="" />
+                  <div class="">
+                    <p class="time">Food Type:</p>
+                    <p class="highlight">Fast Food</p>
+                  </div>
+                </div>
+                <div class="review">
+                  4.6 <i class="fa-solid fa-star" style="color: #ffcf54"></i>
+                  (2,200)
+                </div>
+              </div>
+              <div class="item">
+                <a href="#!"><img src="./assets/img/egg.png" alt="" /></a>
+                <h3 class="food-name">The Egg Chicken Rice</h3>
+                <p class="price">$0 delivery fee</p>
+                <div class="desc">
+                  <div>
+                    <p class="time">Time:</p>
+                    <p class="highlight">20 min</p>
+                  </div>
+                  <img src="./assets/img/Rectangle 49.svg" alt="" />
+                  <div class="">
+                    <p class="time">Food Type:</p>
+                    <p class="highlight">Dish</p>
+                  </div>
+                </div>
+                <div class="review">
+                  4.6 <i class="fa-solid fa-star" style="color: #ffcf54"></i>
+                  (2,200)
+                </div>
+              </div>
+              <div class="item">
+                <a href="#!"
+                  ><img src="./assets/img/french king.png" alt=""
+                /></a>
+                <h3 class="food-name">The French King</h3>
+                <p class="price">$0 delivery fee</p>
+                <div class="desc">
+                  <div>
+                    <p class="time">Time:</p>
+                    <p class="highlight">20 min</p>
+                  </div>
+                  <img src="./assets/img/Rectangle 49.svg" alt="" />
+                  <div class="">
+                    <p class="time">Food Type:</p>
+                    <p class="highlight">Fast Food</p>
+                  </div>
+                </div>
+                <div class="review">
+                  4.6 <i class="fa-solid fa-star" style="color: #ffcf54"></i>
+                  (2,200)
+                </div>
+              </div>
+              <div class="item">
+                <a href="#!"><img src="./assets/img/pasta.png" alt="" /></a>
+                <h3 class="food-name">The Pasta Cafe</h3>
+                <p class="price">$0 delivery fee</p>
+                <div class="desc">
+                  <div>
+                    <p class="time">Time:</p>
+                    <p class="highlight">20 min</p>
+                  </div>
+                  <img src="./assets/img/Rectangle 49.svg" alt="" />
+                  <div class="">
+                    <p class="time">Food Type:</p>
+                    <p class="highlight">Fast Food</p>
+                  </div>
+                </div>
+                <div class="review">
+                  4.6 <i class="fa-solid fa-star" style="color: #ffcf54"></i>
+                  (2,200)
+                </div>
+              </div>
+              <div class="item">
+                <a href="#!"><img src="./assets/img/rice.png" alt="" /></a>
+                <h3 class="food-name">The Rice House</h3>
+                <p class="price">$0 delivery fee</p>
+                <div class="desc">
+                  <div>
+                    <p class="time">Time:</p>
+                    <p class="highlight">20 min</p>
+                  </div>
+                  <img src="./assets/img/Rectangle 49.svg" alt="" />
+                  <div class="">
+                    <p class="time">Food Type:</p>
+                    <p class="highlight">Dish</p>
+                  </div>
+                </div>
+                <div class="review">
+                  4.6 <i class="fa-solid fa-star" style="color: #ffcf54"></i>
+                  (2,200)
+                </div>
+              </div>
+              <div class="item">
+                <a href="#!"
+                  ><img src="./assets/img/The Noodle Cafe.png" alt=""
+                /></a>
+                <h3 class="food-name">The Noodle Cafe</h3>
+                <p class="price">$0 delivery fee</p>
+                <div class="desc">
+                  <div>
+                    <p class="time">Time:</p>
+                    <p class="highlight">20 min</p>
+                  </div>
+                  <img src="./assets/img/Rectangle 49.svg" alt="" />
+                  <div class="">
+                    <p class="time">Food Type:</p>
+                    <p class="highlight">Fast Food</p>
+                  </div>
+                </div>
+                <div class="review">
+                  4.6 <i class="fa-solid fa-star" style="color: #ffcf54"></i>
+                  (2,200)
+                </div>
+              </div>
+            </div>
+            <p class="continue">
+              Showing <span class="highlight">1 - 18</span> of
+              <span class="highlight">120</span> results
+            </p>
+            <div class="page">
+              <div class="btn page-number">1</div>
+              <div class="btn page-number">2</div>
+              <div class="btn page-number">3</div>
+              <div class="btn page-number">4</div>
+              <div class="btn page-number">5</div>
+              <div class="btn page-number">...</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+
+    <footer class="footer">
+      <!-- logo -->
+
+      <div class="content">
+        <div class="logo">
+          <a href="#!" class="a-logo"
+            >F<span><img src="./assets/img/logo-1.jpg" alt="logo" /></span
+            ><span
+              ><img src="./assets/img/logo-2.jpg" alt="logo" />DEATS</span
+            ></a
+          >
+          <p class="desc">
+            Food, drinks, groceries, and more <br />
+            available for delivery and pickup.
+          </p>
+          <div class="social">
+            <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+          </div>
+        </div>
+        <div class="list-path">
+          <ul class="path">
+            <h3>Get Started</h3>
+            <li class="link"><a href="#!">FoodEats Sign In</a></li>
+            <li class="link"><a href="#!">FoodEats Sign Up</a></li>
+            <li class="link"><a href="#!">Become a Rider</a></li>
+            <li class="link"><a href="#!">Become a Partner</a></li>
+          </ul>
+          <ul class="path">
+            <h3>Get Help</h3>
+            <li class="link"><a href="#!">Resources</a></li>
+            <li class="link"><a href="#!">Support</a></li>
+            <li class="link"><a href="#!">Contact Us</a></li>
+          </ul>
+          <ul class="path">
+            <h3>Company</h3>
+            <li class="link"><a href="#!">About Us</a></li>
+            <li class="link"><a href="#!">Customer Rights</a></li>
+            <li class="link"><a href="#!">Career</a></li>
+            <li class="link"><a href="#!">Press</a></li>
+            <li class="link"><a href="#!">Blog</a></li>
+          </ul>
+          <ul class="path">
+            <h3>FootEats For</h3>
+            <li class="link"><a href="#!">Enterprise</a></li>
+            <li class="link"><a href="#!">For Small Business</a></li>
+            <li class="link"><a href="#!">Personal</a></li>
+            <li class="link"><a href="#!">Riders</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="content">
+        <div class="line"></div>
+        <div class="license">
+          <p>Copyright © 2022 UIHUT all rights reserved.</p>
+          <div class="security">
+            <p>Privacy Policy</p>
+            <p>Terms & Conditions</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

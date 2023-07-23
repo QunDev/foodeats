@@ -1,0 +1,468 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: Manrope;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  /* line-height: 30px; */
+}
+
+.content {
+  max-width: 1240px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn {
+  background-color: var(--bgc-btn);
+  display: inline-block;
+  border-radius: 4px;
+  padding: 8px 24px;
+  text-align: center;
+}
+
+:root {
+  --text-color: #191720;
+  --bgc-header: #fffae3;
+  --bgc-btn: #572af8;
+  --white: #fff;
+  --grey: #575363;
+}
+
+/* ============================ */
+
+/* Header */
+
+.header {
+  padding-top: 32px;
+  background-color: var(--bgc-header);
+}
+
+/* Nav */
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 32px;
+}
+
+.logo .a-logo {
+  color: var(--text-color);
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 800;
+}
+
+.menu-links {
+  display: flex;
+}
+
+.menu-links .links:not(:first-child) {
+  margin-left: 48px;
+}
+
+.menu-links .links a {
+  color: var(--text-color);
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.menu-links .links:last-child a {
+  display: flex;
+  align-items: center;
+}
+
+.menu-links .link-vector {
+  margin-left: 6px;
+}
+
+.account .shoping {
+  font-size: 1.6rem;
+  padding: 8px 24px;
+}
+
+.account .btn:hover {
+  background-color: var(--text-color);
+}
+
+.account .shoping a {
+  color: var(--white);
+}
+
+.account .btn-sign-up {
+  margin-left: 20px;
+}
+
+.account .sign-up {
+  color: var(--white);
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 600;
+}
+
+/* Main */
+
+.main {
+  padding-top: 20px;
+}
+
+.main .content {
+  display: grid;
+  grid-template-columns: 270px 1fr;
+}
+
+/* option */
+
+.option .filter,
+.option .restaurants {
+  color: var(--text-color);
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  padding-top: 30px;
+  display: inline-block;
+}
+
+.option .restaurants {
+  position: relative;
+}
+
+.option .restaurants::before {
+  position: absolute;
+  display: inline-block;
+  content: "";
+  height: 1px;
+  background-color: var(--bgc-btn);
+  width: 120px;
+  bottom: -3px;
+}
+
+.option .clear,
+.option .catering {
+  display: inline-block;
+  margin-left: 30px;
+}
+
+.option .clear {
+  color: var(--grey);
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  position: relative;
+}
+
+.option .clear::before {
+  position: absolute;
+  display: inline-block;
+  content: "";
+  height: 1px;
+  background-color: var(--grey);
+  width: 60px;
+  bottom: -3px;
+}
+
+.delivery,
+.pickup {
+  padding: 8px 30px;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 600;
+  margin-top: 30px;
+}
+
+.delivery {
+  color: var(--white);
+  border: 1px solid var(--bgc-btn);
+}
+
+.pickup {
+  background-color: var(--white);
+  border: 1px solid var(--text-color);
+}
+
+.option .desc .title {
+  color: var(--grey);
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  display: inline-block;
+  margin-top: 18px;
+}
+
+.option .desc .highlight {
+  color: var(--bgc-btn);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.option .menu {
+  margin-top: 30px;
+}
+
+.option .menu .food div {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 30px;
+}
+
+.option .food .title {
+  color: var(--text-color);
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.option .food::after {
+  position: relative;
+  display: inline-block;
+  content: "";
+  height: 1px;
+  background-color: var(--grey);
+  width: 270px;
+  margin-top: 30px;
+}
+
+/* List */
+.list {
+  margin-left: 30px;
+}
+
+.list .heading {
+  color: var(--text-color);
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.list .sub {
+  color: var(--bgc-btn);
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.list .title {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+}
+
+.list .ellipse {
+  padding: 18px;
+  background-color: var(--bgc-header);
+  border-radius: 999px;
+  display: inline-block;
+}
+
+.list .menu {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+hr {
+  margin-top: 30px;
+}
+
+/* Container */
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.container .item {
+  padding: 12px;
+  border-radius: 12px;
+  background: var(--white);
+  display: inline-block;
+}
+
+.container .item:hover {
+  border-radius: 12px;
+  background: var(--white);
+  box-shadow: 0px 20px 70px 0px rgba(27, 12, 84, 0.07);
+}
+
+.container .food-name {
+  color: var(--text-color);
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  margin-top: 12px;
+}
+
+.container .price {
+  color: var(--grey);
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  margin-top: 16px;
+}
+
+.container .item .desc {
+  display: flex;
+  gap: 30px;
+  margin-top: 8px;
+}
+
+.container .item .desc .time {
+  color: var(--grey);
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.container .item .desc .highlight {
+  color: var(--text-color);
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 600;
+  margin-top: 5px;
+}
+
+.container .item .review {
+  color: var(--grey);
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  margin-top: 8px;
+}
+
+.list .continue {
+  color: var(--grey);
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  margin-top: 30px;
+}
+
+.list .continue .highlight {
+  color: var(--text-color);
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.page {
+  margin-top: 16px;
+}
+
+.page .page-number {
+  padding: 8px 16px;
+  color: var(--text-color);
+  background-color: var(--white);
+  border-radius: 4px;
+  border: 1px solid #e0dee7;
+  background: var(--white, #fff);
+}
+
+.page .page-number:not(:first-child) {
+  margin-left: 16px;
+}
+
+.page .page-number:first-child {
+  color: var(--white);
+  background-color: var(--bgc-btn);
+}
+
+/* Footer */
+
+.footer {
+  margin-top: 160px;
+  padding: 100px 0 30px;
+  background-color: var(--bgc-header);
+}
+
+.footer .content:first-child {
+  display: flex;
+}
+
+.footer .desc {
+  color: var(--grey);
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  margin-top: 12px;
+}
+
+.footer .social i {
+  font-size: 35px;
+  color: var(--text-color);
+  margin-top: 20px;
+}
+
+.footer .social a:not(:first-child) {
+  margin-left: 12px;
+}
+
+.footer .social a:hover i {
+  color: var(--bgc-btn);
+}
+
+.list-path h3 {
+  color: var(--text-color);
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.list-path .link a {
+  color: var(--grey);
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.list-path .link:not(:first-child) {
+  margin-top: 16px;
+}
+
+.list-path {
+  display: flex;
+  margin-left: 213px;
+}
+
+.list-path .path {
+  margin-left: 75px;
+}
+
+.footer .line {
+  height: 1px;
+  border-radius: 4px;
+  background: var(--grey);
+  margin-top: 55px;
+}
+
+.footer .license {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.footer .license p {
+  color: var(--grey);
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.footer .license .security {
+  display: flex;
+  gap: 30px;
+}
